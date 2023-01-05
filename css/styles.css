@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Raleway:wght@100;200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Raleway:wght@100;200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.BodY {
+  overflow: hidden;
+}
+
+.sec__img {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+.container .nav .top__nav {
+  z-index: 1;
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  color: white;
+}
+.container .nav .top__nav p {
+  font-size: 1.4rem;
+  margin: 0 10px;
+}
+.container .nav .top__nav #p__topNav {
+  color: lightgray;
+}
+.container .nav .cen__nav {
+  position: absolute;
+  top: 20%;
+  left: 35%;
+}
+.container .nav .cen__nav h1 {
+  font-family: "East Sea Dokdo", cursive;
+  font-size: 10rem;
+  color: white;
+}
+.container .nav .cen__nav .net__works {
+  display: flex;
+  justify-content: center;
+}
+.container .nav .cen__nav .net__works img {
+  margin: 0 10px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.container .nav .bot__nav {
+  width: 100%;
+  position: absolute;
+  bottom: 60px;
+}
+.container .nav .bot__nav .ul__nav {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .nav .bot__nav .ul__nav .li__nav {
+  list-style-type: none;
+  margin: 0 20px;
+}
+.container .nav .bot__nav .ul__nav .li__nav .a__nav {
+  text-decoration: none;
+  color: white;
+  font-size: 1.7rem;
+  font-family: "East Sea Dokdo", cursive;
+}
+
+.img__container, .img__container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img__container .container__text p, .img__container2 .container__text p {
+  width: 500px;
+  padding: 15px 40px;
+  text-align: center;
+  font-family: "East Sea Dokdo", cursive;
+  font-family: "Raleway", sans-serif;
+  margin: 0px 40px;
+  color: black;
+}
+
+.img__number1 {
+  padding: 10px 40px;
+  width: 500px;
+  height: 500px;
+  margin: 20px 40px;
+}
+
+.img__number2 {
+  padding: 10px 40px;
+  width: 500px;
+  margin: 20px 40px;
+}
+
+.my-btn {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: lightgray;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.consert__section {
+  width: 100%;
+  padding: 40px 0;
+  background-color: rgb(32, 32, 32);
+}
+.consert__section h1 {
+  font-family: "East Sea Dokdo", cursive;
+  font-family: "Raleway", sans-serif;
+  padding: 100px 0;
+  color: whitesmoke;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.main-carousel {
+  padding: 50px 0px;
+  margin: 0 50px;
+}
+.main-carousel .slider__item {
+  margin: 0 60px;
+}
+.main-carousel .slider__item img {
+  width: 200px;
+}
+.main-carousel .slider__item h1 {
+  font-family: "East Sea Dokdo", cursive;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+
+.custom1 {
+  margin: 40px 0;
+}
+.custom1 .demos__item img {
+  height: 90vh;
+}
+
+@media (max-width: 1300px) {
+  .img__container, .img__container2 {
+    flex-wrap: wrap;
+  }
+  .img__container .container__text p, .img__container2 .container__text p {
+    width: 500px;
+    padding: 15px 20px;
+    text-align: center;
+    font-family: "East Sea Dokdo", cursive;
+    font-family: "Raleway", sans-serif;
+    margin: 0px 20px;
+    color: black;
+  }
+  .custom1 .demos__item {
+    height: 60vh;
+  }
+}
+.my__menu {
+  display: none;
+}
+
+@media (max-width: 968px) {
+  .container .nav .top__nav {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 52%;
+    z-index: 1;
+  }
+  .container .nav .topNav {
+    display: flex;
+  }
+  .container .nav .bot__nav {
+    display: none;
+    background-color: rgb(32, 32, 32);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+  }
+  .container .nav .bot__nav .ul__nav {
+    position: absolute;
+    top: 22%;
+    display: block;
+  }
+  .container .nav .botNav {
+    display: block;
+  }
+  .my__menu {
+    padding: 5px;
+    width: 40px;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    display: block;
+  }
+}
+@media (max-width: 668px) {
+  .container .nav .cen__nav h1 {
+    font-size: 7rem;
+  }
+}
+@media (max-width: 618px) {
+  .container .nav .cen__nav {
+    left: 10%;
+  }
+  .container .nav .cen__nav h1 {
+    font-size: 7rem;
+  }
+  .container .nav .cen__nav .net__works {
+    flex-wrap: wrap;
+  }
+  .img__container, .img__container2 {
+    flex-wrap: wrap;
+  }
+  .img__container .container__text p, .img__container2 .container__text p {
+    width: 500px;
+    padding: 15px 0px;
+    text-align: center;
+    font-family: "East Sea Dokdo", cursive;
+    font-family: "Raleway", sans-serif;
+    margin: 0px 0px;
+    color: black;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
